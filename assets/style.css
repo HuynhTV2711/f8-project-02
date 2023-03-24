@@ -119,6 +119,8 @@ a {
   height: 685px;
   border-radius: 20px;
   object-fit: cover;
+  vertical-align: bottom;
+  padding-bottom: 65px;
 }
 
 .hero .hero-sumary {
@@ -140,6 +142,10 @@ a {
   margin-bottom: 0;
 }
 
+.hero-sumary .item {
+  display: flex;
+  align-items: center;
+}
 .hero-sumary .icon {
   width: 48px;
   height: 48px;
@@ -166,7 +172,7 @@ a {
 hero .hero-sumary .info .title {
   font-weight: 600;
   font-size: 1.8rem;
-  line-height: 30px;
+  line-height: 1.5;
   color: #171100;
 }
 
@@ -181,7 +187,6 @@ hero .hero-sumary .info .title {
   font-size: 5.8rem;
   line-height: 1.17;
   letter-spacing: -0.02em;
-
   color: #171100;
 }
 .content-block .desc {
@@ -204,10 +209,8 @@ hero .hero-sumary .info .title {
   font-family: "Sen";
   font-style: normal;
   font-weight: 700;
-  font-size: 44px;
-  line-height: 54px;
-  /* identical to box height, or 123% */
-
+  font-size: 4.4rem;
+  line-height: 1.23;
   color: #171100;
 }
 .hero .hero-cta {
@@ -216,10 +219,22 @@ hero .hero-sumary .info .title {
   min-width: 180px;
   line-height: 64px;
 }
+
+.hero .icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+  margin: 0 14px 0 28px;
+}
 .content-block .cta-group span {
   font-weight: 600;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.8rem;
+  line-height: 1.67;
   /* identical to box height, or 167% */
   color: #171100;
 }
@@ -230,4 +245,120 @@ hero .hero-sumary .info .title {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+/* courses */
+.courses {
+  padding: 65px 0;
+  margin: 135px 0;
+}
+
+.courses .courses-header {
+  display: flex;
+  justify-content: space-between;
+}
+.courses .heading {
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-size: 3.8rem;
+  line-height: 1.26;
+  color: #171100;
+}
+
+.courses .desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+  margin-top: 16px;
+  width: 458px;
+}
+.courses .action-page {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  /* background-color: #171100; */
+}
+
+.courses .before-page,
+.courses .next-page {
+  width: 39px;
+  height: 39px;
+  border: 1px solid #ffb900;
+  color: #ffb900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 18px;
+}
+.courses .before-page:hover,
+.courses .next-page:hover {
+  background-color: #ffb900;
+  color: white;
+}
+.courses .thumb {
+  width: 370px;
+  height: 278px;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.courses .course-content {
+  margin-top: 55px;
+  display: flex;
+}
+
+.courses .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+.courses .value {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #fea31b;
+  margin-left: 6px;
+}
+
+.courses .item-content {
+  margin: 22px;
+}
+.courses .head-item {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 16px 22px 6px 22px; */
+}
+.courses .desc {
+  max-width: 326px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+.courses .item {
+  margin-right: 30px;
+  box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+.courses .item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.courses .price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+.courses .item-bottom .btn {
+  max-width: 118px;
+}
+
+.courses .item-bottom .btn:hover {
+  background-color: #ffb900;
 }
