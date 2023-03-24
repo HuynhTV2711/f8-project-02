@@ -358,7 +358,7 @@ hero .hero-sumary .info .title {
 .courses .item-bottom .btn {
   max-width: 118px;
 }
-
+/* hover */
 .courses .item-bottom .btn:hover {
   background-color: #ffb900;
 }
